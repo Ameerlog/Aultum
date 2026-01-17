@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useCallback } from "react";
 import { FaChevronDown, FaGlobe, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo2.png";
+import logo from "../assets/aultum34.jpeg";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -32,18 +32,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white shadow-md p-3 flex justify-between sm:justify-evenly items-center relative">
-      {/* Logo */}
-      <Link to="/" className="flex items-center" aria-label="Go to homepage">
-        <img
-          src={logo}
-          alt="Aultum Logo"
-          width="180"
-          height="40"
-          className="object-contain"
-          loading="lazy"
-        />
-      </Link>
+
+    <nav className="bg-white p-3 flex justify-between sm:justify-evenly items-center fixed top-0 left-0 w-full z-50">
+
+      
+     <Link to="/" className="flex items-center">
+  <img
+    src={logo}
+    alt="Aultum Logo"
+    className="h-30 sm:h-20 md:h-20 w-auto object-contain  scale-400"
+  />
+</Link>
+
 
       {/* Hamburger Menu (Mobile) */}
       <button
